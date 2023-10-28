@@ -17045,6 +17045,18 @@ progress {
     display: none !important;
   }
 }
+.seek-page {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+.seek-page__awaiting {
+  display: flex;
+  align-items: center;
+}
+
 .challenge-page {
   display: flex;
   flex-flow: column;
@@ -17131,16 +17143,4 @@ progress {
 }
 .game-page__state {
   text-align: center;
-}
-
-.seek-page {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 50vh;
-}
-.seek-page__awaiting {
-  display: flex;
-  align-items: center;
 }
