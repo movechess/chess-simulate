@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.transports = exports.packageInfo = void 0;
+const tslib_1 = require("tslib");
+const hw_transport_webhid_1 = tslib_1.__importDefault(require("@ledgerhq/hw-transport-webhid"));
+const hw_transport_webusb_1 = tslib_1.__importDefault(require("@ledgerhq/hw-transport-webusb"));
+const util_js_1 = require("./util.js");
+var packageInfo_js_1 = require("./packageInfo.js");
+Object.defineProperty(exports, "packageInfo", { enumerable: true, get: function () { return packageInfo_js_1.packageInfo; } });
+exports.transports = (0, util_js_1.createDefs)(['webusb', hw_transport_webusb_1.default], ['hid', hw_transport_webhid_1.default]);
